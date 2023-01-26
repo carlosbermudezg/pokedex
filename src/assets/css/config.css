@@ -1,0 +1,38 @@
+.config {
+    width: 300px;
+    height: 450px;
+    bottom: 70px;
+    right: 30px;
+    border-radius: 1em;
+    position: fixed;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0px 2px 5px -1px gray;
+    display: none;
+}
+.config form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    height: 100%;
+    color: #fff;
+}
+.config form > select {
+    width: 100px;
+    padding: .5em;
+    border-radius: 1em;
+}
+.config form > button {
+    padding: .5em;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 2px 5px -1px gray;
+    cursor: pointer;
+    border-radius: 1em;
+    width: 100px;
+}
+.show {
+    display: flex;
+}

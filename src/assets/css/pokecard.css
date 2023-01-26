@@ -1,0 +1,120 @@
+.poke__link{
+    text-decoration: none;
+    position: relative;
+    animation: easedown 1s;
+}
+.poke__link:hover {
+    bottom: 10px;
+    animation: easeup .5s;
+}
+.poke__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    border-radius: 1em;
+    color: #fff;
+}
+.poke__card > img {
+    width: 100px;
+}
+.poke__info {
+    display: flex;
+}
+.poke__stats {
+    display: flex;
+    align-items: flex-start;
+    gap: .2em;
+    flex-direction: column;
+}
+.poke__types {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.poke__types small {
+    background-color: #333;
+    border-radius: .5em;
+    padding: .5em;
+}
+.normal {
+    background: radial-gradient(circle, rgb(194, 173, 58) 0%, #222 84%, #222 100%)
+}
+.fighting {
+    background: radial-gradient(circle, rgb(112, 112, 112) 0%, #222 84%, #222 100%)
+}
+.flying {
+    background: radial-gradient(circle, rgb(161, 238, 252) 0%, #222 84%, #222 100%)
+}
+.poison {
+    background: radial-gradient(circle, rgb(183, 58, 194) 0%, #222 84%, #222 100%)
+}
+.ground {
+    background: radial-gradient(circle, rgb(185, 134, 38) 0%, #222 84%, #222 100%)
+}
+.rock {
+    background: radial-gradient(circle, rgb(153, 153, 153) 0%, #222 84%, #222 100%)
+}
+.bug {
+    background: radial-gradient(circle, rgb(147, 253, 161) 0%, #222 84%, #222 100%)
+}
+.ghost {
+    background: radial-gradient(circle, rgb(36, 55, 80) 0%, #222 84%, #222 100%)
+}
+.normal {
+    background: radial-gradient(circle, rgb(194, 173, 58) 0%, #222 84%, #222 100%)
+}
+.steel {
+    background: radial-gradient(circle, rgb(212, 212, 212) 0%, #222 84%, #222 100%)
+}
+.fire {
+    background: radial-gradient(circle, rgb(221, 66, 19) 0%, #222 84%, #222 100%)
+}
+.water {
+    background: radial-gradient(circle, rgb(35, 108, 218) 0%, #222 84%, #222 100%)
+}
+.grass {
+    background: radial-gradient(circle, rgb(0, 255, 115) 0%, #222 84%, #222 100%)
+}
+.electric {
+    background: radial-gradient(circle, rgb(255, 251, 0) 0%, #222 84%, #222 100%)
+}
+.psychic {
+    background: radial-gradient(circle, rgb(255, 253, 122) 0%, #222 84%, #222 100%)
+}
+.ice {
+    background: radial-gradient(circle, rgb(0, 255, 255) 0%, #222 84%, #222 100%)
+}
+.dragon {
+    background: radial-gradient(circle, rgb(101, 209, 29) 0%, #222 84%, #222 100%)
+}
+.dark {
+    background: radial-gradient(circle, rgb(12, 12, 11) 0%, #222 84%, #222 100%)
+}
+.fairy {
+    background: radial-gradient(circle, rgb(255, 206, 243) 0%, #222 84%, #222 100%)
+}
+.unknown {
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, #222 84%, #222 100%)
+}
+.shadow {
+    background: radial-gradient(circle, rgb(166, 173, 139) 0%, #222 84%, #222 100%)
+}
+@keyframes easeup {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 10px;
+    }
+}
+@keyframes easedown {
+    from{
+        bottom: 10px;
+    }
+    to{
+        bottom: 0;
+    }
+}
