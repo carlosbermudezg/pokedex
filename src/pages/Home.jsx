@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form"
 import { useEffect } from 'react'
 import { setPokemonsType } from '../store/slices/pokemonsType.slice'
 import axios from 'axios'
+import trainer from '../assets/img/trainer.png'
 
 const Home = ()=> {
 
@@ -29,7 +30,7 @@ const Home = ()=> {
     return(
         <section className='home'>
             <h1>¡Hello Trainer!</h1>
-            <img src="/src/assets/img/trainer.png" alt="" />
+            <img src={ trainer } alt="" />
             <small>Give me your name to start</small>
             <form onSubmit={ handleSubmit( setUserName ) } >
                 <input id="name" type="text" {...register("name", { required: true })} placeholder={ errors.name ? 'Name (Required Field*)' : 'Name' } />
