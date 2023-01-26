@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import { setPokemonsType } from '../store/slices/pokemonsType.slice'
 import axios from 'axios'
 import trainer from '../assets/img/trainer.png'
+import go from '../assets/img/go.png'
 
 const Home = ()=> {
 
@@ -34,7 +35,7 @@ const Home = ()=> {
             <small>Give me your name to start</small>
             <form onSubmit={ handleSubmit( setUserName ) } >
                 <input id="name" type="text" {...register("name", { required: true })} placeholder={ errors.name ? 'Name (Required Field*)' : 'Name' } />
-                <button type="submit" ><img src="/src/assets/img/go.png" alt="" /></button>
+                <button type="submit" ><img src={ go } alt="" /></button>
             </form>
         </section>
     )

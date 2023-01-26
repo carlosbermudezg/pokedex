@@ -2,6 +2,7 @@ import '../assets/css/pokemonview.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import pokelogo from '../assets/img/pokelogo.png'
 
 const PokemonView = ()=> {
 
@@ -17,7 +18,7 @@ const PokemonView = ()=> {
 
     return(
         <section className='container'>
-            <img src="/src/assets/img/pokelogo.png" alt="" />
+            <img src={ pokelogo } alt="" />
             <div className='container__left'>
                 <div className='pokemon'>
                     <img src="" alt="" />
