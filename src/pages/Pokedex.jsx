@@ -9,7 +9,6 @@ import { setTypeSelected } from '../store/slices/typeSelected'
 import { setPage } from '../store/slices/page.slice'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
-import { username } from '../store/slices/userName.slice'
 
 const Pokedex = ()=> {
 
